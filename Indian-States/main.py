@@ -34,10 +34,7 @@ state_list = []
 while len(state_list) < 28:
     answer = screen.textinput(f"{len(state_list)}/28 States correct", "Enter a state").title()
     if answer == "Quit":
-        missing_states = []
-        for state in all_states:
-            if state not in state_list:
-                missing_states.append(state)
+        missing_states = [state for state in all_states if state not in state_list] 
         new_data = pd.DataFrame(missing_states, columns=["state"])
         new_data.to_csv("states_to_learn.csv")
         break
