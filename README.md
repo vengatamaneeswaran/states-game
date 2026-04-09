@@ -61,4 +61,4 @@ The map image was optimized to **1324 x 1536** (or your specific resized dimensi
 
 ---
 
-**Developed with by Vengat**
+**Developed by Vengat**
